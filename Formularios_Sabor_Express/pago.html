@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Pago</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="form-container">
+
+        <div class="titulo-logo">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h2>Registrar Pago</h2>
+        </div>
+
+        <form action="guardar_pago.php" method="POST">
+
+            <div class="form-group">
+                <label>ID Pedido</label>
+                <input type="number" name="id_pedido" required>
+            </div>
+
+            <div class="form-group">
+                <label>ID Método de Pago</label>
+                <input type="number" name="id_metodo_pago" required>
+            </div>
+
+            <div class="form-group">
+                <label>Monto</label>
+                <input type="number" step="0.01" name="monto" required>
+            </div>
+
+            <div class="form-group confirm-group">
+                <label>
+                
+                </label>
+            </div>
+
+            <div style="font-weight:bold;" >
+                Confirmar <input type="checkbox" name="confirmado">
+            </div>
+            <br>
+            <button type="submit" class="btn">Guardar Pago</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
