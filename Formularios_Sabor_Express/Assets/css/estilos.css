@@ -1,0 +1,133 @@
+/* VARIABLES (MISMO ESTILO QUE TU DISEÑO OBJETIVO) */
+:root {
+    --red: #e70e04;
+    --black: #000;
+    --white: #fff;
+    --gray-light: #f4f4f4;
+    --shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--gray-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* CONTENEDOR FORMULARIO (CAMBIO GRANDE) */
+.form-container, .login-container {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: var(--shadow);
+}
+
+/* Cabeza */
+.titulo-logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    width: 190px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: var(--black);
+}
+
+.titulo-logo p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* CAMPOS */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+input, select, textarea {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: var(--white);
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+/* EFECTO MODERNO */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(231,14,4,0.1);
+}
+
+/* SELECT */
+select option {
+    background: white;
+    color: black;
+}
+
+/* BOTÓN */
+.btn {
+    margin-top: 10px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: var(--red);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+
+.registro-link, .footer-link {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.9rem;
+}
+
+.registro-link a, .footer-link a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registro-link a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 500px) {
+    .form-container, .login-container {
+        padding: 25px;
+        width: 90%;
+    }
+}
