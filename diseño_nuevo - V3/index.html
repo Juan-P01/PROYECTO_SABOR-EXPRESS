@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Express | Menú</title>
+    <link rel="stylesheet" href="Assets/css/index.css">
+</head>
+<body>
+
+<div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" id="closeBtn">&times;</a>
+    <div class="sidebar-header"><img src="Assets/img/Gemini_Generated_Image_cvn21zcvn21zcvn2 (1) (1).png" alt="Logo"></div>
+    <nav class="sidebar-nav">
+        <a href="#">Productos</a><a href="#">Nosotros</a>
+        <hr>
+        <a href="#">Menú</a><a href="#">Promociones</a>
+    </nav>
+</div>
+<div id="overlay" class="overlay"></div>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <span class="menu-icon" id="openBtn">☰</span>
+        <img class="main-logo" src="Assets/img/Gemini_Generated_Image_cvn21zcvn21zcvn2 (1) (1).png" alt="Sabor Express">
+        <div class="nav-links">
+            <a href="#">Productos</a><a href="#">Sobre nosotros</a>
+        </div>
+    </div>
+    <a href="#" class="btn-login">Iniciar Sesión</a>
+</nav>
+
+<header class="hero">
+    <div><h1>¡Sabor que te hará volver!</h1><p>Descubre nuestras nuevas opciones crujientes.</p></div>
+</header>
+
+<section class="categories">
+    <div class="cat-card"><div class="icon-circle">🍔</div><span>Hamburguesas</span></div>
+    <div class="cat-card"><div class="icon-circle">🍟</div><span>Papas</span></div>
+    <div class="cat-card"><div class="icon-circle">🥤</div><span>Bebidas</span></div>
+</section>
+
+<main class="products">
+    <h2 class="section-title">Lo más pedido</h2>
+    <div class="carousel-wrapper">
+        <button class="carousel-btn" id="prevBtn" aria-label="Anterior">&#8249;</button>
+        <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack">
+
+                <article class="product-card">
+                    <span class="badge">Nuevo</span>
+                    <div class="product-img-wrapper"><img src="Assets/img/HAMBURGUESA_!.jpg" alt="Combo Mega Crujiente"><div class="img-hint">Toca para ver más</div></div>
+                    <div class="product-summary"><h3>Combo Mega Crujiente</h3></div>
+                    <div class="product-info"><p>8 Presas de pollo + Papas grandes + Gaseosa 1.5L</p><div class="price">$53.900</div><button class="btn-add">Agregar al pedido</button></div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-img-wrapper"><img src="Assets/img/HAMBURGUESA_2.jpg" alt="Big Titan Burger"><div class="img-hint">Toca para ver más</div></div>
+                    <div class="product-summary"><h3>Big Titan Burger</h3></div>
+                    <div class="product-info"><p>Doble carne, queso cheddar y salsa especial.</p><div class="price">$22.900</div><button class="btn-add">Agregar al pedido</button></div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-img-wrapper"><img src="Assets/img/HAMBURGUESA_!.jpg" alt="Clásica BBQ"><div class="img-hint">Toca para ver más</div></div>
+                    <div class="product-summary"><h3>Clásica BBQ</h3></div>
+                    <div class="product-info"><p>Carne a la parrilla, cebolla caramelizada y salsa BBQ.</p><div class="price">$19.900</div><button class="btn-add">Agregar al pedido</button></div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-img-wrapper"><img src="Assets/img/HAMBURGUESA_2.jpg" alt="Pollo Supremo"><div class="img-hint">Toca para ver más</div></div>
+                    <div class="product-summary"><h3>Pollo Supremo</h3></div>
+                    <div class="product-info"><p>Filete de pollo crujiente, lechuga y mayonesa de la casa.</p><div class="price">$18.500</div><button class="btn-add">Agregar al pedido</button></div>
+                </article>
+
+                <article class="product-card">
+                    <span class="badge">Promo</span>
+                    <div class="product-img-wrapper"><img src="Assets/img/HAMBURGUESA_!.jpg" alt="Doble Smash"><div class="img-hint">Toca para ver más</div></div>
+                    <div class="product-summary"><h3>Doble Smash</h3></div>
+                    <div class="product-info"><p>Dos carnes aplastadas, queso americano y pepinillos.</p><div class="price">$24.900</div><button class="btn-add">Agregar al pedido</button></div>
+                </article>
+
+            </div>
+        </div>
+        <button class="carousel-btn" id="nextBtn" aria-label="Siguiente">&#8250;</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+</main>
+
+<script src="Assets/js/script.js"></script>
+</body>
+</html>
