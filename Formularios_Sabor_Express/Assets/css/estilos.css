@@ -1,4 +1,4 @@
-/* VARIABLES (MISMO ESTILO QUE TU DISEÑO OBJETIVO) */
+/* VARIABLES (MISMO ESTILO QUE EL DISEÑO ORIGINAL) */
 :root {
     --red: #e70e04;
     --black: #000;
@@ -23,7 +23,7 @@ body {
     min-height: 100vh;
 }
 
-/* CONTENEDOR FORMULARIO (CAMBIO GRANDE) */
+/* CONTENEDOR FORMULARIO */
 .form-container, .login-container {
     background: var(--white);
     padding: 40px;
