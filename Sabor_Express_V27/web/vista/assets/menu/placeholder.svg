@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Sin foto disponible">
+  <rect width="400" height="300" fill="#fff9f0"/>
+  <rect x="4" y="4" width="392" height="292" fill="none" stroke="#171717" stroke-width="4" rx="18"/>
+  <circle cx="200" cy="118" r="46" fill="#eadfd4" stroke="#171717" stroke-width="4"/>
+  <path d="M170 132 l16 -28 l14 20 l10 -12 l20 20 z" fill="#d81786" opacity="0.85"/>
+  <text x="200" y="210" font-family="DM Sans, sans-serif" font-size="20" font-weight="700" fill="#171717" text-anchor="middle">Foto próximamente</text>
+  <text x="200" y="236" font-family="DM Sans, sans-serif" font-size="14" fill="#5f5750" text-anchor="middle">La Barra del Sabor</text>
+</svg>

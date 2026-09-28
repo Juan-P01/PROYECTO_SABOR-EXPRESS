@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+
+<project name="Sabor_Express_Completo" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Sabor_Express_Completo.</description>
+    <import file="nbproject/build-impl.xml"/>
+
+    
+    <target name="check-mysql-driver">
+        <mkdir dir="${web.docbase.dir}/WEB-INF/lib"/>
+        <available file="${mysql.driver.file}" property="mysql.driver.exists"/>
+    </target>
+
+    <target name="download-mysql-driver" depends="check-mysql-driver" unless="mysql.driver.exists">
+        <echo message="MySQL Connector/J no encontrado. Descargando 8.0.12..."/>
+        <get src="${mysql.driver.url}" dest="${mysql.driver.file}" usetimestamp="true"/>
+    </target>
+
+    <target name="-pre-compile" depends="download-mysql-driver">
+        <echo message="MySQL Connector/J: ${mysql.driver.file}"/>
+    </target>
+    
+</project>
